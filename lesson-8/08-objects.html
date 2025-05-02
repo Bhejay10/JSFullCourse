@@ -25,6 +25,78 @@
         //delete item 
         delete product.new;
         console.log(product);
-    </script>
+        
+        const product2 = {
+            name: 'shirt',
+            'delivery-time': '1 day',
+
+            //with nested object
+            rating:{
+                starts: 4.5,
+                count: 87
+            },
+
+            //function inside of object
+            fun: function function1(){
+                console.log('function inside object');
+            }
+        };
+
+        //bracket notation
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+
+        //output nested object
+        console.log(product2.rating.count);
+
+        //output funtion "method" inside the object
+        product2.fun();
+
+        //convert javascript object to JSON file
+        console.log(JSON.stringify(product2));
+
+        //convert JSON to javascript object file
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+
+        //Auto-boxing
+        //count how many character
+        console.log('hello'.length);
+
+        //convert string to uppercase 
+        console.log('hello'.toUpperCase());
+  
+        //object is reference
+        const object1 = {
+            message: 'hello',
+            price: 799
+        }
+
+        //destructuring
+        //const message = object1.message;
+        const {message, price}  = object1;
+
+        console.log(message);
+        console.log(price);
+
+        //short hand property if property and variable name are the same
+        const object2 = {
+
+            //shorthand property
+            // message: message,
+            message,
+
+            //method: function function1(){
+            //    console.log('method');
+            //}
+            //shorthand method syntax
+            method(){
+                console.log('method');
+            }
+        }
+        console.log(object2);
+
+        object2.method();
+    </script> 
 </body>
-</html>
+</html>  
