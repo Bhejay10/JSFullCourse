@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+</head>
+<body>
+
+    <script>
+        const product = {
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        //change value
+        product.name = 'cotton';
+        console.log(product);
+
+        //add property
+        product.new = true;
+        console.log(product);
+
+        //delete item 
+        delete product.new;
+        console.log(product);
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 6 Activity</title>
+</head>
+<body>
+
+    <script>
+        //6a to 6c
+        const hour = 20;
+        const name = 'Bhejay';
+
+        if(hour >= 6 && hour <=12){
+            console.log(`Good morning ${name}`);
+        } else if (hour >=13 && hour <= 17){
+            console.log(`Good afternoon ${name}`);
+        }else{
+            console.log(`Good night ${name}`);
+        }
+
+        //6d 6e
+
+        const age = 65;
+        const isHoliday = false;
+
+        if(isHoliday === false && age <= 6 || age >= 65 ){
+            console.log('Discount');
+        } else{
+            console.log('No Discount');
+        }
+
+        /* ternary operator
+        age <= 6 || age >= 65 ? console.log('Discount') : console.log('No Discount');*/
+
+        //6f to 6j
+        const randomNumber = Math.random();
+        let result = '';
+        const guess = 'Tails'
+        
+        console.log(randomNumber);
+
+         /* ternary operator
+        randomNumber < 0.5 ? console.log('heads') : console.log('tails');*/
+
+        if(randomNumber < 0.5){
+            result = 'Heads';
+        }else {
+            result = 'Tails';
+        }
+        console.log(result);
+
+
+        if (guess === result){
+            console.log('You Win');
+        }else{
+            console.log('You Lose');
+        }
+
+
+    </script>
+</body>
+</html>
